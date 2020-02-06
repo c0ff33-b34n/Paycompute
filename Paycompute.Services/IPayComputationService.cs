@@ -12,7 +12,7 @@ namespace Paycompute.Services
         Task CreateAsync(PaymentRecord paymentRecord);
         PaymentRecord GetById(int id);
         IEnumerable<PaymentRecord> GetAll();
-        IEnumerable<SelectListItem> GetAllTaxYear();
+        IEnumerable<SelectListItem> GetAllTaxYears();
         decimal OvertimeHours(decimal hoursWorked, decimal contractualHours);
         decimal ContractualEarnings(decimal contractualHours, decimal hoursWorked, decimal hourlyRate);
         decimal OvertimeRate(decimal hourlyRate);
