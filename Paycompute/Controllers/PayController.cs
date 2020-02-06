@@ -101,5 +101,11 @@ namespace Paycompute.Controllers
             ViewBag.taxYears = _payComputationService.GetAllTaxYears();
             return View();
         }
+
+        public IActionResult Detail(int id)
+        {
+
+            return View();
+        }
     }
 }
