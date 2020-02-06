@@ -185,7 +185,7 @@ namespace Paycompute.Controllers
                 DateJoined = employee.DateJoined,
                 Phone = employee.Phone,
                 Designation = employee.Designation,
-                Email = employee.Designation,
+                Email = employee.Email,
                 NationalInsuranceNo = employee.NationalInsuranceNo,
                 PaymentMethod = employee.PaymentMethod,
                 StudentLoan = employee.StudentLoan,
