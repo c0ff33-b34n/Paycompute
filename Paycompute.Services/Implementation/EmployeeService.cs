@@ -10,6 +10,7 @@ namespace Paycompute.Services.Implementation
 {
     public class EmployeeService : IEmployeeService
     {
+        private decimal studentLoanAmount
         private readonly ApplicationDbContext _context;
         public EmployeeService(ApplicationDbContext context)
         {
@@ -47,7 +48,15 @@ namespace Paycompute.Services.Implementation
 
         public decimal StudentLoanRepaymentAmount(int id, decimal totalAmount)
         {
-            throw new NotImplementedException();
+            var employee = GetById(id);
+            if (employee.StudentLoan == StudentLoan.Yes && totalAmount > 1577)
+            {
+                studentLoanAmount = (totalAmount - 1577) * 0.09m;
+            } else
+            {
+                studentLoanAmount = 0;
+            }
+            return studentLoanAmount;
         }
 
         public decimal UnionFees(int id)
