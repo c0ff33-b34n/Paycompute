@@ -7,13 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Views\NewFolder\**" />
-    <Content Remove="Views\NewFolder\**" />
-    <EmbeddedResource Remove="Views\NewFolder\**" />
-    <None Remove="Views\NewFolder\**" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Content Include="..\..\..\Stu%2527s Git Repos\Paycompute\Paycompute\Views\Employee\Index.cshtml" />
   </ItemGroup>
 
