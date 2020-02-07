@@ -95,7 +95,7 @@ namespace Paycompute.Controllers
                     NetPayment = _payComputationService.NetPay(totalEarnings, totalDeduction)
                 };
                 await _payComputationService.CreateAsync(payRecord);
-                RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(Index));
             }
             ViewBag.employees = _employeeService.GetAllEmployeesForPayroll();
             ViewBag.taxYears = _payComputationService.GetAllTaxYears();
