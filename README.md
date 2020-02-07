@@ -3,9 +3,10 @@ Enterprise Payroll Software using ASP.NET Core Framework.
 Project Technology Stack & Tools used.
 
 - C# Programming language
-- .NET Core 2.2 & 3.0
+- .NET Core 2.2 -> 3.0
 - MVC
 - Entity Framework Core
+- Identity (Role Based Authorization)
 - LINQ
 - Visual Studio 2019
 - Bootstrap 4
